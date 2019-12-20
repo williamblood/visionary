@@ -22,6 +22,7 @@ li,
 button,
 label,
 input,
+a,
 p {
   font-size: var(--text);
 }
@@ -36,12 +37,6 @@ h5 {
   font-size: var(--header4);
 }
 
-.flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 @font-face {
   font-family: "Ruhl";
   src: url("/starter-files/fonts/FrankRuhlLibre-Regular.ttf");
@@ -52,15 +47,28 @@ h5 {
 }
 a {
   text-decoration: none;
+  color: black;
 }
 ul {
   list-style: none;
 }
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  font-family: "Ruhl", sans-serif;
+}
+h1 {
+  font-family: "Vibes", sans-serif;
+}
 
 /* Nav with Hero */
-/*
+
 .main-head {
-  background: rgba(0, 0, 0, 0.089);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 nav {
   min-height: 10vh;
@@ -68,6 +76,7 @@ nav {
   width: 90%;
   margin: auto;
   align-items: center;
+  padding: 2rem 0rem;
 }
 nav ul {
   display: flex;
@@ -99,4 +108,3 @@ nav ul {
 .hero button {
   padding: 1rem;
 }
-*/
