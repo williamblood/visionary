@@ -175,7 +175,7 @@ nav {
 }
 @media screen and (max-width: 842px) {
   .burger span {
-    padding: 2rem 2rem;
+    padding: 0.1rem 2rem;
     background: var(--gray);
     margin: 0.5rem 0rem;
     display: block;
