@@ -93,7 +93,7 @@ nav {
 .hero {
   min-height: 90vh;
   display: flex;
-  width: 95%;
+  width: 100%;
   margin: 0 0 0 auto;
   flex-wrap: wrap;
   overflow: hidden;
@@ -107,6 +107,8 @@ nav {
 }
 .hero-intro h2 {
   padding-top: 3rem;
+
+  color: var(--text);
 }
 .hero-intro a {
   padding: 1rem 1rem;
@@ -177,7 +179,17 @@ nav {
 .menu-check {
   display: none;
 }
+
+/* Media Query */
+
 @media screen and (max-width: 842px) {
+  .hero {
+    width: 100%;
+  }
+  .hero-intro a {
+    margin: 0 0 3rem 0;
+  }
+  /* Burger Menu */
   .burger {
     position: relative;
     display: block;
@@ -188,7 +200,7 @@ nav {
     background: var(--gray);
     margin: 0.5rem 0rem;
     display: block;
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
   }
   .nav-links a {
     color: white;
@@ -223,5 +235,14 @@ nav {
   }
   .menu-check:checked ~ .burger span {
     background: whitesmoke;
+  }
+  .menu-check:checked ~ .burger span:nth-child(1) {
+    transform: rotateZ(-45deg) translateY(500%) translateX(-37%);
+  }
+  .menu-check:checked ~ .burger span:nth-child(2) {
+    transform: rotateZ(45deg) translateY(500%) translateX(13%);
+  }
+  .menu-check:checked ~ .burger span:nth-child(3) {
+    display: none;
   }
 }
