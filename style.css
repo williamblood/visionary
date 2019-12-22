@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+/* Local Fonts: BUGGED 
+    Note:
+    Local font files will affect the way websites are displayed on your machine.
+    To ensure you always have the most up-to-date version of your fonts,
+    we recommend using a fonts manager like SkyFonts.
+*/
+
 @font-face {
   font-family: "Ruhl";
   src: url("/starter-files/fonts/FrankRuhlLibre-Medium.ttf");
@@ -12,6 +19,7 @@
   font-family: "Vibes";
   src: url("/starter-files/fonts/GreatVibes-Regular.ttf");
 }
+
 html {
   font-size: 62.5%;
   --header1: calc(2rem + 1vw);
@@ -22,7 +30,7 @@ html {
   --big: calc(2.4rem + 1vw);
   --dry-maroon: #906272;
   --background-color: #414141;
-  --gray: #505050;
+  --gray: #525252;
 }
 h1 {
   font-size: var(--header1);
@@ -60,8 +68,8 @@ ul {
   align-items: center;
 }
 body {
-  font-family: "Ruhl", Times;
   animation: fadeIn 1.2s ease-in-out;
+  font-family: "Frank Ruhl Libre", serif;
 }
 h1 {
   font-family: "Vibes", sans-serif;
@@ -108,10 +116,9 @@ nav {
 }
 .hero-intro h2 {
   padding-top: 3rem;
-
-  color: var(--text);
 }
 .hero-intro a {
+  color: var(--gray);
   padding: 1rem 1rem;
   border-bottom: 3px solid black;
   text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.274);
@@ -259,9 +266,11 @@ nav {
 .about-text {
   flex: 2 1 40rem;
   background: var(--gray);
-  color: white;
+  color: rgba(245, 245, 245, 0.7);
   justify-content: space-evenly;
-  padding: 3rem 8rem;
+}
+.about-text div {
+  padding: 1rem 4.5rem;
 }
 .about-image {
   flex: 1 1 40rem;
@@ -274,6 +283,15 @@ nav {
   left: 50%;
   transform: translate(-50%, -20%);
 }
+.about-text h2 {
+  color: white;
+  padding: 3rem 0 1.5rem 0;
+  font-family: "Vibes";
+}
+.about-text h3 {
+  padding: 3rem 0rem;
+  color: white;
+}
 .about-image img {
   width: 100%;
   height: 100%;
@@ -281,5 +299,20 @@ nav {
 }
 
 .about-text p {
-  padding: 3rem 8rem;
+  padding: 1.5rem 0rem;
+}
+.about-contact button {
+  background: var(--gray);
+  color: whitesmoke;
+  border: 3px solid rgba(245, 245, 245, 0.144);
+  border-radius: 1.5rem;
+  padding: 0.8rem 1.5rem 1rem 1.5rem;
+  margin: 2rem;
+}
+.about-contact {
+  min-width: 100%;
+  text-align: right;
+}
+.about-contact a {
+  color: white;
 }
