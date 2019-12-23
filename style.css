@@ -190,6 +190,9 @@ nav {
 /* Media Query */
 
 @media screen and (max-width: 842px) {
+  .about-text div {
+    padding: 0rem 1rem;
+  }
   .hero {
     width: 100%;
   }
@@ -268,15 +271,16 @@ nav {
   justify-content: space-evenly;
 }
 .about-text div {
-  padding: 1rem 4.5rem;
+  padding: 0rem 15rem;
 }
 .about-image {
-  flex: 1 1 40rem;
+  flex: 1 1 10rem;
   position: relative;
+  overflow: hidden;
 }
 .about-image h5 {
   position: absolute;
-  letter-spacing: 2rem;
+  letter-spacing: 1.5rem;
   top: 15%;
   left: 50%;
   transform: translate(-50%, -20%);
