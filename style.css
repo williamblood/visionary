@@ -31,6 +31,7 @@ html {
   --dry-maroon: #906272;
   --background-color: #414141;
   --gray: #525252;
+  --learn-more-blue: rgb(0, 128, 255);
 }
 h1 {
   font-size: var(--header1);
@@ -190,9 +191,6 @@ nav {
 /* Media Query */
 
 @media screen and (max-width: 842px) {
-  .about-text div {
-    padding: 0rem 1rem;
-  }
   .hero {
     width: 100%;
   }
@@ -255,6 +253,9 @@ nav {
   .menu-check:checked ~ .burger span:nth-child(3) {
     display: none;
   }
+  .about-text div {
+    padding: 3rem 8rem;
+  }
 }
 
 /* About Me */
@@ -267,14 +268,14 @@ nav {
 .about-text {
   flex: 2 1 40rem;
   background: var(--gray);
-  color: rgba(245, 245, 245, 0.7);
+  color: white;
   justify-content: space-evenly;
 }
 .about-text div {
-  padding: 0rem 15rem;
+  padding: 1rem 5rem;
 }
 .about-image {
-  flex: 1 1 10rem;
+  flex: 1 1 40rem;
   position: relative;
   overflow: hidden;
 }
@@ -286,13 +287,12 @@ nav {
   transform: translate(-50%, -20%);
 }
 .about-text h2 {
-  color: white;
-  padding: 3rem 0 1.5rem 0;
+  padding: 4rem;
   font-family: "Vibes";
 }
 .about-text h3 {
-  padding: 3rem 0rem;
-  color: white;
+  padding: 2rem 0rem;
+  font-family: "Ruhl Medium";
 }
 .about-image img {
   width: 100%;
@@ -305,11 +305,9 @@ nav {
 }
 .about-contact button {
   background: var(--gray);
-  color: whitesmoke;
-  border: 3px solid rgba(245, 245, 245, 0.144);
+  border: 3px solid rgba(255, 255, 255, 0.719);
   border-radius: 1.5rem;
   padding: 0.8rem 1.5rem 1rem 1.5rem;
-  margin: 2rem;
 }
 .about-contact {
   min-width: 100%;
