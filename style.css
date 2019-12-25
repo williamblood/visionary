@@ -242,17 +242,16 @@ nav {
     transform: rotateZ(45deg) translateY(500%) translateX(13%);
     background: white;
   }
-  .toggle .line3{
+  .toggle .line3 {
     display: none;
     color: white;
   }
-    /* About */
-  }
+  /* About */
   .about-text div {
     padding: 3rem 8rem;
   }
 
-  /* Gallery */
+  /* Gallery Media Query */
 
   .gallery {
     /* Intended code bugged 
@@ -260,7 +259,6 @@ nav {
     */
     grid-template-columns: repeat(2, 1fr);
   }
-
   .gallery img {
     grid-row: auto;
     grid-column: auto;
@@ -273,6 +271,7 @@ nav {
     font-size: calc(10rem + 1vw) !important;
   }
 }
+
 @media screen and (max-width: 1283px) {
   .form-wrapper span {
     font-size: calc(10rem + 1vw) !important;
@@ -400,7 +399,7 @@ footer {
   background-color: var(--gray);
   display: flex;
   justify-content: space-between;
-  padding: 3rem 5%;
+  padding: 2rem 5%;
   align-items: center;
 }
 footer h4 {
