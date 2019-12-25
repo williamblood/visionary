@@ -27,7 +27,7 @@ html {
   --header3: calc(3rem + 1vw);
   --header4: calc(2.4rem + 1vw);
   --text: calc(1.5rem + 1vw);
-  --big: calc(2.4rem + 1vw);
+  --big: calc(20rem + 1vw);
   --dry-maroon: #906272;
   --background-color: #414141;
   --gray: #525252;
@@ -271,6 +271,18 @@ nav {
     grid-row: auto;
     grid-column: auto;
   }
+  /* About Section */
+  .contact img {
+    display: none;
+  }
+  .form-wrapper span {
+    font-size: calc(10rem + 1vw) !important;
+  }
+}
+@media screen and (max-width: 1283px) {
+  .form-wrapper span {
+    font-size: calc(10rem + 1vw) !important;
+  }
 }
 /* End of Media Query */
 
@@ -319,21 +331,15 @@ nav {
 .about-text p {
   padding: 1.5rem 0rem;
 }
-.about-contact button {
-  background: var(--gray);
-  border: none;
-  /* Button border 
-  border: 3px solid rgba(255, 255, 255, 0.719);
-  border-radius: 0.5rem;
-  */
-  padding: 0.8rem 1.5rem 1rem 1.5rem;
-}
 .about-contact {
   min-width: 100%;
   text-align: right;
 }
 .about-contact a {
   color: white;
+}
+.about-contact a:hover {
+  text-decoration: underline;
 }
 
 /* Gallery */
@@ -359,22 +365,29 @@ nav {
 .contact {
   min-height: 90vh;
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
 }
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.form-wrapper {
+  flex: 4 1 40rem;
 }
-form input {
+.form-wrapper h2 {
+  margin: 5rem 0;
+}
+.form-wrapper label {
+  display: block;
+}
+.form-wrapper input {
   background-color: var(--gray);
   border: none;
   padding: 1rem 4rem;
+  color: white;
+  display: block;
 }
-form button {
-  margin-top: 3rem;
-  padding: 1rem 4rem;
+.form-wrapper button {
+  display: block;
+  margin: 3rem 0;
+  padding: 1rem;
+  width: 100%;
   background: var(--dry-maroon);
   border: none;
   color: white;
@@ -383,12 +396,9 @@ form button {
 .contact img {
   flex: 1 1 40rem;
 }
-.form-wrapper {
-  flex: 4 1 40rem;
-}
 .form-wrapper span {
   color: var(--dry-maroon);
-  font-size: 20rem;
+  font-size: calc(20rem + 1vw);
 }
 
 /* Footer */
@@ -396,20 +406,16 @@ footer {
   background-color: var(--gray);
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 2rem 5%;
+  align-items: center;
 }
-
 footer h4 {
-  font-size: 2rem;
-  font-weight: lighter;
+  font-size: calc(1rem + 1vw);
   color: rgba(255, 255, 255, 0.561);
+  flex: 1 1 40rem;
 }
-
 footer ul {
   display: flex;
   justify-content: space-around;
   flex: 1 1 20rem;
-}
-footer h4 {
-  flex: 1 1 40rem;
 }
