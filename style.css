@@ -191,10 +191,6 @@ nav {
     transform: rotateZ(0);
   }
 }
-.burger,
-.menu-check {
-  display: none;
-}
 
 /* Media Query */
 
@@ -235,31 +231,20 @@ nav {
     z-index: 2;
     transition: transform 0.4s ease;
   }
-  .menu-check {
-    display: block;
-    position: absolute;
-    top: 25%;
-    right: 4%;
-    width: 5rem;
-    height: 5rem;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 100;
-  }
-  .menu-check:checked + .nav-links {
+  .nav-open {
     transform: translateX(-100%);
   }
-  .menu-check:checked ~ .burger span {
-    background: whitesmoke;
-  }
-  .menu-check:checked ~ .burger span:nth-child(1) {
+  .toggle .line1 {
     transform: rotateZ(-45deg) translateY(500%) translateX(-37%);
+    background: white;
   }
-  .menu-check:checked ~ .burger span:nth-child(2) {
+  .toggle .line2 {
     transform: rotateZ(45deg) translateY(500%) translateX(13%);
+    /* opacity: 0 */
   }
-  .menu-check:checked ~ .burger span:nth-child(3) {
+  .toggle .line3{
     display: none;
+  }
     /* About */
   }
   .about-text div {
