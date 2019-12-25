@@ -240,10 +240,11 @@ nav {
   }
   .toggle .line2 {
     transform: rotateZ(45deg) translateY(500%) translateX(13%);
-    /* opacity: 0 */
+    background: white;
   }
   .toggle .line3{
     display: none;
+    color: white;
   }
     /* About */
   }
