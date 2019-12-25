@@ -19,7 +19,15 @@
   font-family: "Vibes";
   src: url("/starter-files/fonts/GreatVibes-Regular.ttf");
 }
+html {
+  scroll-behavior: smooth;
+}
 
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 html {
   font-size: 62.5%;
   --header1: calc(2rem + 1vw);
@@ -52,7 +60,7 @@ h3 {
 }
 h4,
 h5 {
-  font-size: var(--header4);
+  font-size: var(--header3);
 }
 
 a {
@@ -406,11 +414,11 @@ footer {
   background-color: var(--gray);
   display: flex;
   justify-content: space-between;
-  padding: 2rem 5%;
+  padding: 2.5rem 5%;
   align-items: center;
 }
 footer h4 {
-  font-size: calc(1rem + 1vw);
+  font-size: var(--text);
   color: rgba(255, 255, 255, 0.561);
   flex: 1 1 40rem;
 }
@@ -418,4 +426,15 @@ footer ul {
   display: flex;
   justify-content: space-around;
   flex: 1 1 20rem;
+}
+
+@media screen and (min-width: 1700px) {
+  html {
+    --header1: 3rem;
+    --header2: 4.5rem;
+    --header3: 3.5rem;
+    --header4: 2.5rem;
+    --text: 2.5rem;
+    --big: 6rem;
+  }
 }
