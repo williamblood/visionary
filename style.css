@@ -124,7 +124,7 @@ nav {
   color: var(--gray);
 }
 .hero-intro h2 {
-  padding: 1rem;
+  padding-top: 4rem;
 }
 .hero-intro a {
   padding: 1rem 1rem;
@@ -264,9 +264,6 @@ nav {
     grid-column: auto;
   }
   /* About Section */
-  .contact img {
-    display: none;
-  }
   .form-wrapper span {
     font-size: calc(10rem + 1vw) !important;
   }
@@ -276,7 +273,7 @@ nav {
   .form-wrapper span {
     font-size: calc(10rem + 1vw) !important;
   }
-  img {
+  #contact-img {
     display: none;
   }
 }
