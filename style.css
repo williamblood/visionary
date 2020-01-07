@@ -276,6 +276,9 @@ nav {
   .form-wrapper span {
     font-size: calc(10rem + 1vw) !important;
   }
+  img {
+    display: none;
+  }
 }
 /* End of Media Query */
 
