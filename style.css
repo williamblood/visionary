@@ -13,11 +13,11 @@
 
 @font-face {
 	font-family: "Ruhl";
-	src: url("/starter-files/fonts/FrankRuhlLibre-Medium.ttf");
+	src: url("/assets/fonts/FrankRuhlLibre-Medium.ttf");
 	font-family: "Ruhl Medium";
-	src: url("/starter-files/fonts/FrankRuhlLibre-Medium.ttf");
+	src: url("/assets/fonts/FrankRuhlLibre-Medium.ttf");
 	font-family: "Vibes";
-	src: url("/starter-files/fonts/GreatVibes-Regular.ttf");
+	src: url("/assets/fonts/GreatVibes-Regular.ttf");
 }
 html {
 	scroll-behavior: smooth;
@@ -327,6 +327,7 @@ nav {
 .about-contact {
 	min-width: 100%;
 	text-align: right;
+	margin: 4rem;
 }
 .about-contact a {
 	color: white;
